@@ -2,6 +2,9 @@ var currentDayEl = $("#currentDay");
 var currentTimeEl = parseInt(moment().format('k'));
 
 currentDayEl.text(moment().format("MMM Do YY"));
+//get local storage on page load
+//find way to save each line in local storage
+
 
 for(var hourCount = 9; hourCount < 18; hourCount++) {
     var hourGrabEl = $("#hour-" + hourCount);
@@ -22,5 +25,5 @@ for(var hourCount = 9; hourCount < 18; hourCount++) {
 $(".saveBtn").on("click", function () {
     var tempString = $(this.previousElementSibling).val();
         localStorage.setItem("description", JSON.stringify.tempString);
-        
+
 })
