@@ -22,8 +22,12 @@ for(var hourCount = 9; hourCount < 18; hourCount++) {
     }
 }
     
-$(".saveBtn").on("click", function () {
-    var tempString = $(this.previousElementSibling).val();
-        localStorage.setItem("description", JSON.stringify.tempString);
+$(".saveBtn").on("click"), function () {
+    
+}
 
-})
+// $(".saveBtn").on("click", function () {
+//     var tempString = $(this.previousElementSibling).val();
+//         localStorage.setItem("description", JSON.stringify.tempString);
+
+// })
